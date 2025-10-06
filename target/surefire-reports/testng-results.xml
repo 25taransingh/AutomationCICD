@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="6" passed="2" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-06T16:01:18 IST" name="Suite" finished-at="2025-10-06T16:02:19 IST" duration-ms="61047">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.loginErrorValidation()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" name="loginErrorValidation" class="taransinghlearning.Tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.productErrorValidation()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" name="productErrorValidation" class="taransinghlearning.Tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="PurchaseOrder">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" name="submitOrder" class="taransinghlearning.Tests.SubmitOrderTest"/>
+      </group> <!-- PurchaseOrder -->
+    </groups>
+    <test started-at="2025-10-06T16:01:18 IST" name="SubmitOrderTest" finished-at="2025-10-06T16:02:05 IST" duration-ms="47576">
+      <class name="taransinghlearning.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" started-at="2025-10-06T16:01:19 IST" name="launchApplication" finished-at="2025-10-06T16:01:31 IST" duration-ms="12229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" started-at="2025-10-06T16:01:31 IST" name="submitOrder" data-provider="getData" finished-at="2025-10-06T16:01:57 IST" duration-ms="25834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Taran@123, product=ZARA COAT 3, email=writetotaransingh@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" started-at="2025-10-06T16:01:57 IST" name="tearDown" finished-at="2025-10-06T16:01:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" started-at="2025-10-06T16:01:57 IST" name="launchApplication" finished-at="2025-10-06T16:02:03 IST" duration-ms="6713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" started-at="2025-10-06T16:02:03 IST" name="submitOrder" data-provider="getData" finished-at="2025-10-06T16:02:04 IST" duration-ms="653" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=monu@09876, product=ADIDAS ORIGINAL, email=monu@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn w-10 rounded"> is not clickable at point (1198,444) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2a4ff746-3260-4109-8de4-2d509f897975, clickElement {id=691c73e0-667e-4152-950b-4641934cdc1a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 5784, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[FirefoxDriver: firefox on windows (2a4ff746-3260-4109-8de4-2d509f897975)] -> class name: mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 2a4ff746-3260-4109-8de4-2d509f897975]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn w-10 rounded"> is not clickable at point (1198,444) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2a4ff746-3260-4109-8de4-2d509f897975, clickElement {id=691c73e0-667e-4152-950b-4641934cdc1a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 5784, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[FirefoxDriver: firefox on windows (2a4ff746-3260-4109-8de4-2d509f897975)] -> class name: mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 2a4ff746-3260-4109-8de4-2d509f897975
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at taransinghlearning.pageObject.ProductCatalogue.addProductToCart(ProductCatalogue.java:65)
+at taransinghlearning.Tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" started-at="2025-10-06T16:02:04 IST" name="tearDown" finished-at="2025-10-06T16:02:05 IST" duration-ms="1334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyOrder()[pri:0, instance:taransinghlearning.Tests.SubmitOrderTest@2ad48653]" started-at="2025-10-06T16:02:05 IST" name="verifyOrder" finished-at="2025-10-06T16:02:05 IST" depends-on-methods="taransinghlearning.Tests.SubmitOrderTest.submitOrder" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method taransinghlearning.Tests.SubmitOrderTest.verifyOrder() on instance taransinghlearning.Tests.SubmitOrderTest@2ad48653 depends on not successfully finished methods 
+[taransinghlearning.Tests.SubmitOrderTest.submitOrder() on instance taransinghlearning.Tests.SubmitOrderTest@2ad48653]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method taransinghlearning.Tests.SubmitOrderTest.verifyOrder() on instance taransinghlearning.Tests.SubmitOrderTest@2ad48653 depends on not successfully finished methods 
+[taransinghlearning.Tests.SubmitOrderTest.submitOrder() on instance taransinghlearning.Tests.SubmitOrderTest@2ad48653]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+      </class> <!-- taransinghlearning.Tests.SubmitOrderTest -->
+    </test> <!-- SubmitOrderTest -->
+    <test started-at="2025-10-06T16:01:18 IST" name="ErrorValidationsTest" finished-at="2025-10-06T16:02:19 IST" duration-ms="61047">
+      <class name="taransinghlearning.Tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:18 IST" name="launchApplication" finished-at="2025-10-06T16:01:30 IST" duration-ms="11741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:30 IST" name="loginErrorValidation" finished-at="2025-10-06T16:01:30 IST" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:30 IST" name="tearDown" finished-at="2025-10-06T16:01:33 IST" duration-ms="2423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:33 IST" name="launchApplication" finished-at="2025-10-06T16:01:38 IST" duration-ms="5182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="productErrorValidation()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:38 IST" name="productErrorValidation" finished-at="2025-10-06T16:01:39 IST" duration-ms="655" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn w-10 rounded"> is not clickable at point (758,444) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [56d32757-e7a5-4538-881f-71ae16b747ee, clickElement {id=689890ad-123c-4c2f-a733-9259ef58950c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 6140, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[FirefoxDriver: firefox on windows (56d32757-e7a5-4538-881f-71ae16b747ee)] -> class name: mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 56d32757-e7a5-4538-881f-71ae16b747ee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn w-10 rounded"> is not clickable at point (758,444) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [56d32757-e7a5-4538-881f-71ae16b747ee, clickElement {id=689890ad-123c-4c2f-a733-9259ef58950c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 6140, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[FirefoxDriver: firefox on windows (56d32757-e7a5-4538-881f-71ae16b747ee)] -> class name: mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 56d32757-e7a5-4538-881f-71ae16b747ee
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at taransinghlearning.pageObject.ProductCatalogue.addProductToCart(ProductCatalogue.java:65)
+at taransinghlearning.Tests.ErrorValidationsTest.productErrorValidation(ErrorValidationsTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:39 IST" name="tearDown" finished-at="2025-10-06T16:01:40 IST" duration-ms="1376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:40 IST" name="launchApplication" finished-at="2025-10-06T16:01:45 IST" duration-ms="5091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:01:45 IST" name="productErrorValidation" finished-at="2025-10-06T16:02:18 IST" duration-ms="32743" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at taransinghlearning.Tests.ErrorValidationsTest.productErrorValidation(ErrorValidationsTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:taransinghlearning.Tests.ErrorValidationsTest@30f842ca]" started-at="2025-10-06T16:02:18 IST" name="tearDown" finished-at="2025-10-06T16:02:19 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- taransinghlearning.Tests.ErrorValidationsTest -->
+    </test> <!-- ErrorValidationsTest -->
+  </suite> <!-- Suite -->
+</testng-results>
