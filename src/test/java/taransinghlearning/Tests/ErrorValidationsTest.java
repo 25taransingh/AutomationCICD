@@ -19,6 +19,7 @@ public class ErrorValidationsTest extends BaseTest {
 	@Test(groups = { "ErrorHandling" },retryAnalyzer=Retry.class )
 	public void loginErrorValidation() throws IOException {
 		// TODO Auto-generated method stub
+		// test CICD
 		
 
 		landingPage.loginApplication("writetotaransingh@gmail.com", "Taran@@123");
