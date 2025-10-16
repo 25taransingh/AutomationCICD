@@ -32,7 +32,7 @@ import taransinghlearning.pageObject.ProductCatalogue;
 
 public class SubmitOrderTest extends BaseTest {
 	String Product = "ZARA COAT 3";
-// Test integrated with HashMap
+// Test integrated with HashMap1
 // to remove HashMap and use less number just remove the "HashMap<String, String> input" in method argument and inside method input.get values
 
 	@Test(dataProvider = "getData", groups = "PurchaseOrder")
