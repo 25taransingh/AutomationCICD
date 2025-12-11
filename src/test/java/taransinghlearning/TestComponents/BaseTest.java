@@ -88,6 +88,7 @@ public class BaseTest {
 		if (!browserName.toLowerCase().contains("headless")) {
 		    driver.manage().window().maximize();
 		}
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		return driver;
 
