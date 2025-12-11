@@ -67,6 +67,7 @@ public class AbstractComponent {
 	
 	
 	public CartPage goToCartPage() {
+		
 	//	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", cartHeader);
 		
 		waitForWebElementToAppear(cartHeader);
