@@ -37,7 +37,7 @@ public class SubmitOrderTest extends BaseTest {
 
 	@Test(dataProvider = "getData", groups = "PurchaseOrder")
 	public void submitOrder(HashMap<String, String> input) throws IOException {
-		// TODO Auto-generated method stu   TEST 
+		// TODO Auto-generated method stu   TEST cicd
 
 		String CountryName = "India";
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
